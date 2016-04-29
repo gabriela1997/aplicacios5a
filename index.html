@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+ 
+<body onLoad="MM_preloadImages('imagenes/p1.png','imagenes/c1.png','imagenes/3.png','imagenes/12.png','imagenes/43.png','imagenes/16.png','imagenes/33.png','imagenes/cas.png','imagenes/14.png')">
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>DIA DE LA TIERRA</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+ <div>
+ <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/3.png',1)"><img src="imagenes/2.png" width="368" height="192" id="Image14"></a></a></center>
+  </center> 
+  </div>
+  </div>
+  
+<div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>¿QUE ES EL DIA DE LA TIERRA?</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>FECHA QUE SE CELEBRA EL DIA DE LA TIERRA</h2>
+       </a>
+     </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>PORQUE SE CELEBRA Y COMO LO HACEN</h2>
+   </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>CUIDADO DEL MEDIO AMBIENTE</h2>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>MEDIDAS</h2>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>CALENTAMIENTO GLOBAL</h2>
+       </a>
+     </li>
+      <li class="ui-first-child ui-last-child">
+       <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>BENEFICIOS</h2>
+       </a>
+     </li>
+      <li class="ui-first-child ui-last-child">
+       <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>TIPOS DE CONTAMINACION</h2>
+       </a>
+     </li>
+      <li class="ui-first-child ui-last-child">
+       <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>EL MEDIO AMBIENTE EN MI COMUNIDAD</h2>
+       </a>
+     </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+      <img src="imagenes/persona_rosa.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>app5</h4>
+     <h4>Juarez Aguilar Gabriela</h4>
+   </div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>DIA QUE SE CELEBRA</h1>
+  </div>
+ <div data-role="content" align="justify">
+  <div>
+     <h2> Día de la Tierra de 1970 logró una coincidencia política que parecía imposible. Ese día condujo a la creación de la Agencia de Protección al Medio Ambiente de Estados Unidos y a la aprobación de leyes relacionadas con el aire limpio, el agua limpia y la conservación de especies en peligro de extinciOn. A partir de entonces, cada año en esta fecha, el mundo entero reflexiona y se moviliza por una Tierra mejor
+<center><img src="imagenes/4.png" width="400" height="383"></center>
+Hasta este siglo pocos pensaron que los seres humanos, viviendo en una extensión de tierra aparentemente sin límites y con agua abundante, podrían causar daños irreparables al medio ambiente. Sin embargo hoy los gobiernos y la gente en general en todo el mundo luchan con la erosión costera, los derrames de petróleo y la contaminación del agua potable, en tanto que cuestiones como el crecimiento de la población, la deforestación, la lluvia ácida y la posibilidad de rápidos cambios climáticos significan decisiones difíciles para el futuro.
+<center><img src="imagenes/5.png" width="455" height="369"></center>
+En 1975 un grupo internacional de estudio reunido en Belgrado, Yugoslavia, propuso un marco de referencia mundial para la educación ambiental, el cual se llamó la "Carta de Belgrado". Esta Carta afirma que la meta de la educación ambiental es hacer que la población mundial se preocupe por el medio ambiente y tenga el conocimiento y la dedicación que la capacite para buscar soluciones a los problemas actuales y prevenir problemas nuevos. 
+</div>
+ </div>
+<div data-role="footer" data-theme="a">
+  <h4>Juárez Aguilar Gabriela</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>DIA DE CELEBRACION</h1>
+ </div>
+  <div data-role="content" align="justify">
+ <div>
+ <h2>El 22 de abril de cada año se celebra el Día Mundial de la Tierra. </h2>
+<center>
+<img src="imagenes/1.png" width="500" height="552"></center>
+</div>
+ </div>
+<div data-role="footer" data-theme="a">
+  <h4>Juárez Aguilar Gabriela</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>¿PORQUEY COMO LO HACEN?</h1>
+  </div>
+ <div data-role="content" align="justify">
+  <div>
+     <h2><p>Creado con el fin de generar participación y conciencia ambiental entre las personas, así como para apoyar los programas e iniciativas ambientales que se gestan año a año desde entonces.</p>
+<p>Según la EPA de los Estados Unidos (Agencia de Protección del Ambiente por sus siglas en inglés) uno de los logros más importantes de ese día fue la movilización masiva de personas del común que querían involucrarse y hacer sentir su preocupación por la problemática ambiental existente. El objetivo de toma de conciencia se había logrado. Un interrogante planteado desde esa década y para el cual en la actualidad no se ha encontrado respuesta contundente es el de ¿Cómo lograr que esa conciencia se convierta en acción?. Una respuesta viable fueron las políticas, convenciones, protocolos, tratados, entre otros acuerdos ambientales creados desde las altas esferas gubernamentales para dar solución a las problemáticas. Estos acuerdos no han tenido el éxito esperado debido a la falta de apoyo y compromiso en la ejecución por parte de los gobiernos y corporaciones.</p>
+<p>Durante el primer aniversario del día de la tierra William Ruckelshaus en su discurso llamado “De la conciencia a la acción” vislumbró la posible respuesta a la pregunta en cuestión, proponiendo que “la responsabilidad de cada uno de nosotros tiene que ir más allá de la sensibilización a la acción para que la humanidad vuelva a un equilibrio con la naturaleza”.</p>
+<center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/12.png',1)"><img src="imagenes/11.png" width="486" height="313" id="Image16"></a></center>
+<p>Esto nos reafirma el compromiso que debemos adquirir personalmente con las acciones ambientales que se generan a nivel local con el fin de propender por su desarrollo continuo y así poder escalar, logrando un impacto a nivel regional e incluso global.</p>
+
+<p>A partir de nuestras acciones individuales como reciclar, ahorrar energía, disminuir el consumo de papel, ser compradores responsables, participar activamente en campañas ambientales, entre otras, podremos convertir nuestros sentimientos verdes o la moda verde en algo tangible, duplicable y permanente en el tiempo.
+
+Es la conexión con las demás personas y las iniciativas ambientales comunes las que nos permitirán continuar comprometidos con el desarrollo y fortalecimiento de las acciones encaminadas a proteger la canica azul en la cual vivimos.</p>
+<center><iframe width="420" height="315" src="https://www.youtube.com/embed/s78VjjoMSXg" frameborder="0" allowfullscreen></iframe></center>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>COMO LO CELEBRAN</h1>
+     <div>
+     <P>El 22 de abril se celebra mundialmente el Día de la Tierra, con el que se pretende concienciar a la sociedad de la importancia de conservar nuestro planeta y preservar el medio ambiente. La celebración del Día de la Tierra comenzó el 22 de abril de 1970 en los estados Unidos, promovido por el senador y activista ambiental Gaylord Nelson, y en abril de 2009 fue declarada por la Organización de las Naciones Unidas (ONU). Se trata de una celebración que nos incumbe a todos los ciudadanos del planeta, es por eso que desde unComo.como queremos daros algunas sugerencias sobre cómo celebrar el Día de la Tierra.</P>
+     </h2> 
+</div>
+ </div>
+<div data-role="footer" data-theme="a">
+  <h4>Juárez Aguilar Gabriela</h4>
+  </div>
+</div>
+</div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>CUIDADO</h1>
+ </div>
+  <div data-role="content" align="justify">
+ <div>
+ <h2><p>LAS CONSECUENCIAS DEL ABUSO DE LOS RECURSOS NATURALES</p>
+<p>La vida vegetal y animal ha sido utilizada por el hombre por siglos, sin embargo, la constante explotación indiscriminada de estos recursos por la sociedad, podría causar daños al propio hombre y a la vida vegetal y animal.
+La población se beneficia de los recursos naturales, utilizados, en ocasiones, sin medida y provocando el deterioro del medio ambiente; los bosques, por ejemplo, pueden explotarse, si se siembran más árboles, así la reforestación preservará la flora y fauna del bosque.
+La casa es el refugio y espacio para los niños, donde se llevan a cabo muchas labores que requieren limpieza y orden; de esta forma los niños aprenden hábitos de cuidado que, guiados por los adultos, aplicarán también la preservación del medio ambiente.
+Uno de los problemas que cada día se hace más grave es el relacionado con el uso irracional de nuestros recursos naturales; las causas de los problemas ambientales van unidas a la forma como percibimos a la misma naturaleza, el uso que hacemos de ésta y la manera como apoyamos su recuperación.</p>
+<p>La tala inmoderada de zonas boscosas, la quema excesiva de campos para uso agrícola, la explotación masiva de especies vegetales y animales, la caza furtiva y la contaminación a la que está expuesta la naturaleza son algunas de las muchas causas por las que actualmente la calidad de vida de la sociedad va disminuyendo.
+El ser humano toma recursos, desde hace siglos, de su medio para proveerse de alimento, hogar, vestido, etcétera. La sobrepoblación y la falta de conciencia ha ocasionado que se abuse de dichos recursos.
+Si se desea que los niños gocen de un medio sano y seguro en el cual puedan desarrollarse es, todavía tiempo de unir esfuerzos y afrontar este problema, se debe también involucrar en este uso moderado de los recursos naturales a los pequeños para que desde ahora se acostumbren a conservar y respetar a la naturaleza.</p>
+<center>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/16.png',1)"><img src="imagenes/6.png" width="482" height="396" id="Image21"></a></p></center>
+<p>LOS ANIMALES EN PELIGRO DE EXTINCIÓN</p>
+<p>Cuando nuestros hijos comienzan a identificar lo que existe en la comunidad, es importante que conozcan todos los animales vivos y los que no pertenecen a la comunidad. En nuestro país hay muchos animales que se extinguieron por falta de atención o el deterioro del lugar natural donde vivían. Nosotros podemos visitar con los pequeños, zoológicos donde muchos animales viven y se reproducen; los niños reconocerán que la contaminación del aire, lagos, mares, zonas agrícolas y la cacería han provocando que existan pocos animales o bien desaparezcan de la Tierra. La desaparición de muchas especies animales en nuestro territorio es un problema que crece rápidamente y afecta el equilibrio del medio ambiente. </p><p>Desde hace mucho tiempo, el saqueo de aves exóticas (tucán, loro, guacamaya, perico, etcétera), el desconocimiento del rol de varios felinos y mamíferos (pumas, lobos, jaguares), la pesca de especies que no terminan su ciclo de maduración, la contaminación de mares, tierra y aire entre, muchas otras causas han generado que exista un desequilibrio en la naturaleza. La piel de varias especies de mamíferos, felinos y reptiles se ha usado para fabricar ropa, calzado, bolsas, cinturones, etcétera; las plumas de distintas aves como el pavorreal, el quetzal, el ganso y otras más, son utilizadas para sombreros y abrigos; los huevos de las tortugas se utilizan como alimento; además el uso de químicos ocasiona la muerte de aves e insectos; la caza excesiva de especies, como el coyote, el lobo mexicano y varios felinos, ha provocado la aparición de un número enorme de ratas que acaban con las cosechas. Estas y otras causas como el contrabando clandestino de especies son prácticas cotidianas de los seres humanos que, lejos de hacernos un beneficio, nos perjudican, pues ignoramos en la mayoría de las veces el impacto ecológico que esto trae a la naturaleza.
+Es necesario recordar que existen leyes que castigan a quienes dañan a la naturaleza; nuestros hijos tienen el derecho a vivir en un mundo con todos los recursos. Una de las responsabilidades que tenemos los adultos al educarlos es inculcarles el respeto por la vida y enseñarles que el equilibrio ecológico es necesario para vivir.</p></h2>
+<center><img src="imagenes/7.png" width="515" height="431"></center>
+ </div>
+ </div>
+<div data-role="footer" data-theme="a">
+  <h4>Juárez Aguilar Gabriela</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>MEDIDAS</h1>
+  </div>
+ <div data-role="content" align="justify">
+  <div>
+     <h2><p>Después de la reunión de expertos de la ONU sobre Cambio Climático realizada en París Francia el 18 de febrero de 2007,  se determinó que solo quedan 10 años para que entre todos podamos frenar la catástrofe ambiental y climática que se avecina.
+Más allá de lo que nos digan los expertos acerca de los años “que nos quedan” para frenar estos fenómenos, lo evidente es que desde hace décadas tenemos sumamente depredados y degradados gran parte de los ecosistemas. La responsabilidad NO es solo de políticos y empresarios. Lo que cada habitante de la Tierra haga en contra de estos fenómenos es clave para salvar el planeta, nuestras vidas y las de las futuras generaciones.</p>
+<center>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','imagenes/14.png',1)"><img src="imagenes/20.png" width="413" height="365" id="Image29"></a>
+</center>
+<p>Así que no más quejas inútiles, mejor intenta colaborar siguiendo estas acciones y consejos que SI hacen la diferencia.</p>
+<p>1. EL AGUA: Consume la justa.</p>
+<p>– Evita gastos innecesarios de agua con estos consejos:</p>
+<p>– Mejor ducha que baño. Ahorras 7.000 litros al año.</p>
+<p>– Mantén la ducha abierta sólo el tiempo indispensable, cerrándola mientras te enjabonas.</p>
+<p>– No dejes la llave abierta mientras te lavas los dientes o te afeitas o mientras lavas los trastos.</p>
+<p>– No laves los alimentos con la llave abierta, utiliza un recipiente. Al terminar, esta agua se puede aprovechar para regar las plantas.</p>
+<p>– No te enjabones bajo el chorro de agua</p>
+<p>– Utiliza la lavadora y el lavavajillas sólo cuando estén completamente llenos.</p>
+<p>– No arrojes al inodoro bastoncillos, papeles, colillas, compresas, tampones o preservativos, no es el cubo de la basura.</p>
+<p>– Repara inmediatamente las fugas, 10 gotas de agua por minuto suponen  2.000 litros de agua al año desperdiciados.</p>
+<p>+– Utiliza plantas autóctonas, que requieren menos cuidados y menos agua.</p>
+<p>– Reutiliza parte del agua que usa tu lavadora de ropa, esta te podrá servir para los baños, limpiar pisos, hacer aseo o lavar el frente de tu casa.</p>
+<p>– No vacíes la cisterna sin necesidad.</p>
+<p>– No tires el aceite por los fregaderos. Flota sobre el agua y es muy difícil de eliminar.</p>
+<p>– No arrojes ningún tipo basura al mar, ríos o lagos.</p>
+<p>– Riega los jardines y calles con agua no potable.</p>
+<p>– El mejor momento para regar es la última hora de la tarde ya que reduce la evaporación.</p>
+<p>– El agua con la que cociste alimentos (especialmente verduras) se puede utilizar para regar las plantas.</p>
+<p>– El gel, el champú, los detergentes y los productos de limpieza son contaminantes. Hay que usarlos con moderación y optar por productos biodegradables.</p>
+<p>– No olvides plantar un árbol por lo menos una vez en tu vida.</p>
+ <center><img src="imagenes/21.png" width="450" height="295"></center>
+<p>2. BASURAS: Más de la mitad son reciclables</p>
+<p>– La ley de las tres erres: REDUCIR el consumo innecesario e irresponsable, REUTILIZAR y RECICLAR los bienes.</p>
+<p>– Reduce la producción de basura.</p>
+<p>– Al recuperar cajas de cartón o envases que también son hechos con papel contribuyes a que se talen menos árboles, encargados de capturar bióxido de carbono y de purificar el aire. Al reutilizar 100 kilogramos de papel se salva la vida de al menos 7 árboles.</p>
+<p>– Reutiliza las bolsas de plástico. Lleva tus bolsas al supermercado o tienda y evita que en cada ocasión te den una bolsa nueva.</p>
+<p>– Separa las basuras. Consulta en tu administración local o en tu unidad residencial si disponen de un sistema de separación de basuras.</p>
+<p>– Usa papel reciclado y escribe siempre por los dos lados.</p>
+<p>– Usa envases RETORNABLES o reutiliza los envases, sean de plástico, pet o vidrio. Puedes comprar productos a granel (crema, yogurt, shampoo, jabón líquido u otros productos de limpieza) llevando tu envase. Así evitas que cada vez te den uno nuevo y se convierta en basura. Lo mismo puedes hacer con el agua para beber, en lugar de comprar botellas, llena tu envase con el agua del garrafón o del filtro, que además es más barato.</p>
+<p>– No derroches servilletas, pañuelos, papel higiénico u otra forma de papel.</p>
+<p>– Elige siempre que puedas envases de VIDRIO en lugar de plástico, pet, tetrapack y aluminio.</p>  
+<p>– De preferencia utiliza baterías recargables y cuando utilices baterías desechables no las tires revueltas entre la basura. Sepáralas y colócalas en un recipiente aparte.</p>
+<p>– Recuerda que hay empresas dedicadas a la compra de materiales reciclables como papel periódico, libros viejos, botellas etc.</p>  
+ <center><img src="imagenes/25.png" width="399" height="381"></center>
+<p>3. ALIMENTACIÓN:</p>
+<p>– Disminuye el consumo de carnes rojas ya que la cría de vacas y borregos contribuye al calentamiento global, a la tala de árboles y la disminución de los ríos. Producir un kilo de carne gasta más agua que 365 duchas.</p>  
+<p>– Los productos enlatados consumen muchos recursos y energía. No consumas alimentos en lata, especialmente atún porque está en vía de extinción.</p>
+<p>– Evita consumir alimentos transgénicos (Organismos modificados por medio de ingeniería genética, que permiten el intercambio de genes de especies completamente distintas) ya que su producción contamina los ecosistemas, deteriorando el ambiente.</p>
+<p>– No consumas animales exóticos como tortugas, chigüiros, iguanas, etc. o huevos de éstos animales.</p>
+<p>– Consume más frutas, verduras, legumbres y cereales, que carnes.</p>
+<p>– Nunca compres pescados de tamaños pequeños para consumir, pues son crías a las que no se les permitió reproducirse.</p>    
+<p>– Si puedes consume alimentos orgánicos (que no contienen productos químicos: pesticidas, insecticidas, conservadores, etc.)</p>
+<center><img src="imagenes/26.png" width="450" height="287"></center>
+<p>4. ENERGÍA: Consume solamente la necesaria.</p>
+<p>–  Usa agua caliente solo de ser necesario o solo la necesaria, conecta el calentador solo dos horas al día, gradúalo entre 50 y 60 grados  o intenta bañarte con agua fría es más saludable</p>.
+<p>– Evita usar en exceso la plancha, el calentador de agua o la lavadora, que gastan mucha energía y agotan los recursos para generarla. Esto lleva a que los países se vean en la necesidad de usar petróleo, carbón o gas para copar la oferta energética. Estos combustibles generan gases como el dióxido de carbono, que suben la temperatura.</p>
+<p>– Mejor cocinar con gas que con energía eléctrica.</p>
+<p>– APAGA el TV, radio, luces, computadora con su respectiva pantalla, si no los estas usando. En tu lugar de trabajo apaga las luces de zonas  poco utilizadas.</p>
+<p>– Utiliza focos o bombillos de bajo consumo de energía.</p>
+<p>– Modera el consumo de latas de aluminio.</p>
+<p>– No uses o compres productos de PVC para nada, su producción contamina muchísimo y este material no es reciclable.</p>
+ <center><img src="imagenes/27.png" width="462" height="307"></center>
+<p>5. TRANSPORTE: Modera el uso del vehículo particular, haz un uso eficiente del automóvil.</p>
+<p>– Procura no viajar solo, organiza traslados en grupo o en transporte público.</p>
+<p>– Infla bien las llantas de tu carro para que ahorre gasolina y el motor no la queme en exceso.</p>
+<p>– Empieza a utilizar la bicicleta en la medida lo posible.</p>
+<p>– Revisa la emisión de gases de tu vehículo.</p>
+<p>– No aceleres cuando el vehículo no esté en movimiento.</p>
+<p>– Reduce el consumo de aire acondicionado, pues éste reduce la potencia y eleva el consumo de la gasolina.</p>
+<p>– Modera tu Velocidad: En carretera nunca sobrepases los 110 kilómetros por hora ya que más arriba produce un exagerado consumo de combustible.</p>
+<p>– Nunca cargues innecesariamente tú vehículo con mucho peso: A mayor carga mayor consumo de combustible.</p>
+ <center><img src="imagenes/28.png" width="455" height="276"></center>
+<p>5. PAPEL</p>
+<p>– Usa habitualmente papel reciclado.</p>
+<p>– Fomenta el uso de productos hechos a partir de papel usado.</p>
+<p>– Reduce el consumo de papel.</p>
+<p>– Usa las hojas por las dos caras.</p>
+<p>– Haz sólo las fotocopias imprescindibles</p>
+<p>– Reutiliza los sobres, cajas, etc.</p>
+<p>– Rechaza productos de un sólo uso.</p>
+ <center><img src="imagenes/29.png" width="479" height="287"></center>
+<p>6. EDUCACIÓN:</p>
+<p>– Educa a los más jóvenes y a todo los que te sea posible en el respeto a la naturaleza.</p></h2> 
+</div>
+ </div>
+<div data-role="footer" data-theme="a">
+  <h4>Juárez Aguilar Gabriela</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>CALENTAMIENTO</h1>
+ </div>
+  <div data-role="content" align="justify">
+ <div>
+ <h2><p>Calentamiento global y cambio climático se refieren al aumento observado en los últimos siglos de la temperatura media del sistema climático de la Tierra y sus efectos.</p>
+<p>Múltiples líneas de pruebas científicas demuestran que el sistema climático se está calentando.3 4 Aunque a menudo la prensa popular comunica el incremento de la temperatura atmosférica superficial como medición del calentamiento global, la mayor parte de la energía adicional almacenada en el sistema climático desde 1970 se ha usado en calentar los océanos. El resto ha fundido el hielo y calentado los continentes y la atmósfera.5 nota 1 Muchos de los cambios observados desde la década de 1950 no tienen precedentes en décadas, aun milenios.</p>
+<center>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','imagenes/33.png',1)"><img src="imagenes/31.png" width="601" height="357" id="Image28"></a>
+</center>
+<p>La comprensión científica del calentamiento global ha ido en aumento. En su quinto informe (AR5) el Grupo Intergubernamental de Expertos sobre el Cambio Climático (IPCC) señala que en 2014 los científicos estaban más del 95 % seguros de que la mayor parte del calentamiento global es causada por las crecientes concentraciones de gases de efecto invernadero (GEI) y otras actividades humanas (antropogénicas).7 8 9 Las proyecciones de modelos climáticos resumidos en el AR5 indicaron que durante el presente siglo la temperatura superficial global subirá probablemente 0,3 a 1,7 °C para su escenario de emisiones más bajas usando mitigación estricta y 2,6 a 4,8 °C para las mayores.10 Estas conclusiones han sido respaldadas por las academias nacionales de ciencia de los principales países industrializados11 nota 2 y no son disputadas por ninguna organización científica de prestigio nacional o internacional.</p>
+<p>El cambio climático futuro y los impactos asociados serán distintos en una región a otra alrededor del globo.14 15 Los efectos anticipados incluyen un aumento en las temperaturas globales, una subida en el nivel del mar, un cambio en los patrones de las precipitaciones y una expansión de los desiertos subtropicales.16 Se espera que el calentamiento sea mayor en la tierra que en los océanos y el más acentuado ocurra en el Ártico, con el continuo retroceso de los glaciares, el permafrost y la banquisa. Otros efectos probables incluyen fenómenos meteorológicos extremos más frecuentes, tales como olas de calor, sequías, lluvias torrenciales y fuertes nevadas;17 acidificación del océano y extinción de especies debido a regímenes de temperatura cambiantes. Entre sus impactos humanos significativos se incluye la amenaza a la seguridad alimentaria por la disminución del rendimiento de las cosechas y la pérdida de hábitat por inundación.</p>
+<center><img src="imagenes/32.png" width="269" height="188"></center>
+<p>Las posibles respuestas al calentamiento global incluyen la mitigación mediante la reducción de las emisiones, la adaptación a sus efectos, la construcción de sistemas resilientes a sus impactos y una posible ingeniería climática futura. La mayoría de los países son parte de la Convención Marco de las Naciones Unidas sobre el Cambio Climático (CMNUCC),20 cuyo objetivo último es prevenir un cambio climático antropogénico peligroso.</p>
+<center><img src="imagenes/30.png" width="269" height="188"></center>
+<p>El 12 de noviembre de 2015, científicos de la NASA informaron que el dióxido de carbono (CO2) producido por el hombre continúa incrementándose sobre niveles no alcanzados en cientos de miles de años: actualmente, cerca de la mitad del CO2 proveniente de la quema de combustibles fósiles no es absorbido ni por la vegetación ni los océanos y permanece en la atmósfera</p></h2>
+</div>
+</div>
+<div data-role="footer" data-theme="a">
+  <h4>Juárez Aguilar Gabriela</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>BENEFICIOS</h1>
+  </div>
+ <div data-role="content" align="justify">
+  <div>
+    <h2><p>Beneficios</p>
+<p>Existen varias relaciones entre los problemas de la contaminación atmosférica y el cambio climático, algunas de ellas incluyen hechos tales como; el ozono troposférico, que es al mismo tiempo un contaminante criterio y un gas de efecto invernadero. Es así, que desde la década pasada, la articulación de las políticas orientadas a la atención de estos problemas se ha estrechado, sobre la base del reconocimiento de que los contaminantes urbanos y los gases de efecto invernadero derivan de una fuente común: la combustión de combustibles fósiles.</p>
+<center><img src="imagenes/34.png" width="269" height="188"></center>
+<p>A partir de este reconocimiento, el interés de la comunidad internacional por analizar los cobeneficios o ventajas secundarias de las políticas que vinculan estos problemas ha crecido y la aproximación más común para desarrollar estos estudios ha sido a través del  siguiente planteamiento: si se implementa alguna acción para reducir las emisiones de los gases de efecto invernadero ¿cuál es el beneficio local  observado en términos de reducción de la contaminación atmosférica y de mejoras en la salud humana? La metodología empleada para la evaluación de cobeneficios, permite estimar el impacto de medidas orientadas tanto a la atención de la contaminación local como global.</p>
+<center><img src="imagenes/35.png" width="269" height="188"></center>
+<p>En este contexto, el Instituto con apoyo del Programa de Estrategias Ambientales Integradas (Integrated Environmental Strategies Program) de la Agencia de Protección Ambiental de Estados Unidos (US Environmental Protection Agency, EPA), y del Laboratorio Nacional de Energía Renovable de ese país (US National Renewable Energy Laboratory), diseñó y desarrolló el Programa de Estrategias Ambientales Integradas en México</p></h2>
+</div>
+ </div>
+<div data-role="footer" data-theme="a">
+  <h4>Juárez Aguilar Gabriela</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>TIPOS</h1>
+ </div>
+  <div data-role="content" align="justify">
+ <div>
+ <h2><p>Diferentes tipos de contaminación están clasificados por su parte que afectan o resultan por las causas de contaminación particulares. Cada uno de estos tipos tiene sus propias causas y consecuencias distintivas. El estudio de la contaminación ambiental ayuda a entender los conceptos básicos con mayor detalle y producir protocolos para los tipos específicos.</p>
+ <center><p>CONTAMINACION DEL AGUA</p></center>
+<p>Como su nombre lo sugiere, “Contaminación del agua” es el tipo de contaminación que supone la contaminación distintos cuerpos de agua. Varias criaturas acuáticas dependen de estos cuerpos de agua y sus características naturales nutritivos para apoyar su vida.
+Contaminación del Agua. El aire de forma natural se compone de 78% de nitrógeno, 21% de oxígeno, 0,9% de los gases de óxido y 0,1% de gases inertes. Cuando este equilibrio se altera, provoca trastornos de proporciones graves.</p>
+<p>Los gases de escape parcialmente quemados liberados de motores de combustión interna añaden gases tóxicos a la atmósfera.
+Ciertas industrias liberan algunos gases como el dióxido de azufre y monóxido de carbono que se mezclan con el aire y las nubes y provocan lluvias ácidas.</p>
+<center><img src="imagenes/36.png" width="350" height="263"></center>
+<p>La quema de plástico de desecho, madera y goma también liberan gases cancerígenos a la atmósfera.
+La contaminación del aire es fatal para los seres vivos, ya que casi todos los seres vivos respiran directamente de la atmósfera. Por lo tanto el uso de convertidores catalíticos en los vehículos, evitando la quema de los productos utilizados, dejando vehículos que funcionan durante largos períodos de tiempo mientras esté detenida, favorecen un buen funcionamiento natural en el medio ambiente.</p>
+    <center><b>CONTAMINACION DEL SUELO</b></center>
+ <p>Suelo pelado de su fertilidad natural mediante el uso de sustancias químicas artificiales, como los pesticidas, insecticidas, etc maduración agentes que se conoce como “contaminación del suelo”. Las plantas dependen de los compuestos nitrogenados presentes en el suelo para su nutrición. El uso de insecticidas, pesticidas y otras sustancias químicas artificiales absorbe el nitrógeno del suelo por lo que es apto para el crecimiento de las plantas. Las plantas son responsables de mantener el suelo de una manera firme así, cuando las plantas no pueden crecer divide el suelo, lo que conduce a la erosión del suelo.</p>
+<center><img src="imagenes/37.png" width="447" height="317"></center>
+    <center><b>CONTAMINACION TERMICA</b></center>
+ <p>Aumento de la temperatura en el ecosistema debido a la liberación de energía de calor excesivo en el medio ambiente por métodos artificiales o desastres naturales que se llama “La contaminación térmica”. Generalmente, las industrias manufactureras liberar una gran cantidad de energía térmica que se transfiere a los cuerpos de agua y aire. Incluso los vehículos que tienen motores de combustión liberan una gran cantidad de energía térmica, ya que requieren altas temperaturas para funcionar. El dióxido de carbono tiene una propiedad de bloquear el calor salga de la atmósfera y por lo que el calor que viene del sol es atrapada en la atmósfera.
+Contaminación térmica. Resultados térmicas de contaminación en un aumento de la temperatura, que es la principal causa del derretimiento de los casquetes polares, lo que a su vez conduce a un aumento de los niveles de agua. La contaminación térmica ha aumentado considerablemente desde el siglo diecinueve que resulta en una Tierra más caliente.</p>
+<center><img src="imagenes/38.png" width="423" height="308"></center>
+    <center><b>CONTAMINACION RADIACTIVA</b></center>
+     <P>Contaminación radiactiva se produce cuando “RADIACTIVO” desintegrarse liberando metales peligrosos rayos beta que pueden causar cáncer y otras enfermedades mutativas. Este tipo de contaminación puede ocurrir por cualquiera de los vertidos de residuos radiactivos de las centrales nucleares en los cuerpos de agua, daños en los reactores nucleares con miras a la contaminación radiactiva que duraría muchos años y muchos más. En la Segunda Guerra Mundial, cuando EE.UU. atacó a Hiroshima y Nagasaki de Japón, la bomba atómica dejó una huella radiactiva que conduce a enfermedades altamente transformadoras. Por lo tanto, la mayoría de las personas que sobrevivieron al bombardeo atómico finalmente murió de cáncer y mutaciones.</P>
+    <center><p>CONTAMINACION ACUSTICA</p></center>
+     <div>
+ <P>Hay diferentes cualidades de los sonidos. Los sonidos que no son agradables de oír se llaman “ruidos”. Así que un exceso de ruido en el exterior conduce a la “contaminación acústica”. Esto puede ser experimentado por bocinazos demasiados vehículos en las carreteras, maquinaria pesada está operando a la intemperie (por ej, un martillo neumático), los trenes, los clubes, las multitudes más pobladas y muchos más. La contaminación acústica es conocido por causar estrés mental y la depresión. También puede causar daños en el tímpano, que puede causar sordera. La contaminación acústica tiene más de un efecto psicológico en lugar de uno físico.</P>
+     <center><img src="imagenes/40.png" width="403" height="301"></center>
+   <center><p>CONTAMINACION LUMINICA</h1></p>
+ <P>La iluminación brillante en funciones, grandes ciudades, etc causa “contaminación lumínica”. El exceso de luz en la retina provoca gran incomodidad en los ojos, especialmente en condiciones de poca luz, como durante la noche. Las luces brillantes tensión de los ojos y también le dan dolores de cabeza y migrañas. Si observamos, la contaminación lumínica, contaminación térmica y la contaminación acústica son todos los tipos de contaminación que son causadas por las diferentes formas de energía.</P>
+     <center> <img src="imagenes/41.png" width="488" height="351"> </center></h2>
+ </div>
+ </div>
+<div data-role="footer" data-theme="a">
+     <h4>Juarez Aguilar Gabriela</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>MI COMUNIDAD</div>
+  <div data-role="content" align="justify">
+ <div>
+ <strong><!-- Start WOWSlider.com -->
+<iframe src="visor/index.html" style="width:900%;height:50%;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com --></strong>
+ <h2><center><p>problemas</p></center>
+ <p>Los problemas de mi colonia es que no todos coperan a la limpieza de las calles, hay dias que la basura las dejan en las esquinas luego por los perritos rompen las bolsas de basura, asta derramar todo. </p>
+ <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/43.png',1)"><img src="imagenes/44.png" width="463" height="396" id="Image20"></a>
+ </center>
+ <p>El desperdicio de agua al labar las calles, carros. Esto mas la basura hace que las coladeras se tapen hasta que se llene la apate de asta bajo de mi colonia probocando un poco de inundacion a los vecinos de aparte de abajo. Tambíen hay veces en que en la baranca avienten a los animales muertos y cuando no alcanzan a tiara su basura lo tiran en la barranca causando un mal holor tanto como plagas de ratones, cucarachas y muchas mas animales.</p>
+<center><img src="imagenes/42.png" width="500" height="552"></center>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>COMO AYUDAR A MEGORAR </h1>
+     <div>
+     <p>Hablar con los vecinos a haceindoles entender que tirando su basura o dejandola en la esquina. No es correcto ya que estamos probocando un daño al medio ambiente y haciendolo ver.</p>
+     <p>También con barer cada quien su calle turnandonos para recoger toda la basura y tirarla en el lugar donde deve de ir. Para ya no probocar que las colaredas se tapen. Es mejor que todos colavoren para tener limpio y si no ponerles una multa para que, lo ajan.</p>
+     <center>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','imagenes/cas.png',1)"><img src="imagenes/c.png" width="636" height="298" id="Image"></a></p>
+     </center>
+     </h2>
+
+ </div>
+ </div>
+<div data-role="footer" data-theme="a">
+  <h4>Juárez Aguilar Gabriela</h4></div></div>
+</body>
+</html>
